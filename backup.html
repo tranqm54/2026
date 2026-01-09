@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Năm Mới 2026</title>
+    <link rel="stylesheet" href="src/fontend/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <header class="tet-header">
+        <h1 class="main-title">TẾT NGUYÊN ĐÁN VIỆT NAM</h1>
+        <div class="nav">
+            <a href="#" class="btn active">Giới thiệu</a>
+            <a href="#" class="btn">Phong tục</a>
+            <a href="#" class="btn">Ẩm thực</a>
+            <a href="#" class="btn">Ý nghĩa</a>
+        </div>
+    </header>
+
+    <main class="content-card" data-aos="fade-up">
+        <div class="intro-text">
+            <h2>Giới thiệu chung</h2>
+            <p>Tết Nguyên Đán là dịp truyền thống thiêng liêng nhất, nơi mọi người sum vầy bên gia đình, cùng nhau nhìn lại năm cũ và chào đón một năm mới bình an, sung túc và tràn đầy hy vọng.</p>
+        </div>
+
+        <div class="image-side">
+            <div class="main-photo" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/family.jpg" alt="Gia đình sum vầy">
+            </div>
+
+            <div class="thumb-gallery">
+                <img src="images/thumb1.jpg" data-aos="fade-up" data-aos-delay="300">
+                <img src="images/thumb2.jpg" data-aos="fade-up" data-aos-delay="400">
+                <img src="images/thumb3.jpg" data-aos="fade-up" data-aos-delay="500">
+                <img src="images/thumb4.jpg" data-aos="fade-up" data-aos-delay="600">
+            </div>
+        </div>
+    </main>
+
+    <section class="extra-content" style="padding: 50px 0; text-align: center;">
+        <h2 data-aos="fade-down">Không Khí Ngày Tết</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 30px;">
+            <div data-aos="flip-left" data-aos-delay="200">
+                <img src="images/tet-5.jpg" style="width: 350px; border-radius: 15px;" alt="Chợ hoa">
+                <p>Chợ hoa xuân rực rỡ</p>
+            </div>
+            <div data-aos="flip-right" data-aos-delay="400">
+                <img src="images/tet-6.jpg" style="width: 350px; border-radius: 15px;" alt="Bánh chưng">
+                <p>Nồi bánh chưng đêm giao thừa</p>
+            </div>
+        </div>
+
+        <div class="video-section" data-aos="fade-up" style="margin-top: 50px;">
+             <h2 style="color: #d42121;">Video Chúc Tết 2026</h2>
+             <iframe width="800" height="450" src="https://www.youtube.com/embed/VIDEO_ID_CUA_BAN" frameborder="0" allowfullscreen style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);"></iframe>
+        </div>
+    </section>
+
+    <script>
+        // Hiệu ứng hoa mai rơi (Giữ nguyên của bạn nhưng bỏ AOS.init dư thừa ở đây)
+        function createFlower() {
+            const flower = document.createElement('div');
+            flower.innerHTML = '🌼';
+            flower.style.position = 'fixed';
+            flower.style.top = '-20px';
+            flower.style.left = Math.random() * window.innerWidth + 'px';
+            flower.style.fontSize = (Math.random() * 10 + 15) + 'px';
+            flower.style.zIndex = '999';
+            flower.style.color = '#ffcc00';
+            flower.style.opacity = Math.random();
+            document.body.appendChild(flower);
+
+            let pos = -20;
+            function fall() {
+                pos += 2;
+                flower.style.top = pos + 'px';
+                if (pos < window.innerHeight) requestAnimationFrame(fall);
+                else flower.remove();
+            }
+            fall();
+        }
+        setInterval(createFlower, 400);
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+      AOS.init({
+        duration: 1000, // Thời gian chạy hiệu ứng (1 giây)
+        once: false,    // Hiệu ứng lặp lại khi lướt lên/xuống
+        offset: 120     // Khoảng cách bắt đầu chạy hiệu ứng khi lướt tới
+      });
+    </script>
+</body>
+</html>

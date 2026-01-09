@@ -1,6 +1,8 @@
 import {translator} from './languages.js';
 
-function button_select(){
+
+// header
+function init_header(){
     const nav = ["nav_intro", "nav_customs", "nav_cuisine", "nav_significance"]
     // initialization
 
@@ -19,11 +21,11 @@ function button_select(){
     for (let item of nav){
         const button = document.createElement("a");
         button.textContent = translator.get(item);
-        button.href = "#";
+        // button.href = "#";
         button.className = "btn";
+        button.onclick = () => onclick_header(item);
         div.appendChild(button);
     }
-
 
 
     header.appendChild(title);
@@ -33,9 +35,63 @@ function button_select(){
     document.body.prepend(header);
 }
 
+function onclick_header(key){
+    console.log(key)
+    // translator.setMode(key);
+    // translator.updateUI();
+}
+
+// layout create
+function create_layout_intro(main){
+    main.className = "content-card";
+
+    const div = document.createElement("div");
+    div.className = "intro-text";
+
+    const h2 = document.createElement("h2");
+    h2.textContent = translator.get("nav_intro_general_introduction");
+
+    const p = document.createElement("p");
+    p.textContent = translator.get("nav_intro_content");
+
+    div.appendChild(h2);
+    div.appendChild(p);
+
+    main.appendChild(div)
+}
+
+
+// main
+function set_layout(key){
+    let main = document.querySelector("main");
+
+    if (main){
+        main.interHTML = "";
+    }else{
+        main = document.createElement("main");
+        main.className = "content-card";
+        document.body.appendChild(main);
+    }
+
+
+    const layouts = {
+        "nav_intro": () => create_layout_intro(main),
+        "nav_customs": () => create_layout_customs(main),
+        "nav_cuisine": () => create_layout_cuisine(main)
+    };
+
+    const renderFunc = layouts[key];
+    if (renderFunc) {
+        main.innerHTML = "";
+        renderFunc();
+    }
+}
+
+
 
 function main(){
-    button_select();
+    init_header();
+    set_layout();
 }
 
 main();

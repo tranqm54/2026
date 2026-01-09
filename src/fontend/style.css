@@ -32,6 +32,10 @@ body {
     margin-bottom: 20px;
 }
 
+.nav {
+    transform: translateY(20px);
+}
+
 /* Nút bấm kiểu kính mờ */
 .nav .btn {
     padding: 10px 30px;
@@ -43,13 +47,16 @@ body {
     text-decoration: none;
     backdrop-filter: blur(8px);
     transition: 0.3s;
-    transform: translateY(10px);
 }
+
+
 .nav .btn.active, .nav .btn:hover {
     background: #8b0000;
     border-color: #ffcc00;
     box-shadow: 0 0 15px #ffcc00;
 }
+
+
 /* Khung nội dung trắng tinh tế */
 .content-card {
     max-width: 1200px;

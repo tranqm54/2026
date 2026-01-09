@@ -12,7 +12,13 @@ const LanguagesResources = {
         "nav_intro": "Giới thiệu",
         "nav_customs": "Phong tục",
         "nav_cuisine": "Ẩm thực",
-        "nav_significance": "Ý nghĩa"
+        "nav_significance": "Ý nghĩa",
+
+        "nav_intro_content" : "Tết Nguyên Đán là dịp truyền thống thiêng liêng nhất, nơi mọi người sum vầy bên gia đình, cùng nhau nhìn lại năm cũ và chào đón một năm mới bình an, sung túc và tràn đầy hy vọng.",
+        "nav_intro_general_introduction" : "Giới Thiệu Chung"
+
+
+        
     }
 };
 
