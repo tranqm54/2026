@@ -1,0 +1,11 @@
+{
+    "abcd1234": {
+        "username": "abcd1234",
+        "uid": "abcd1234",
+        "avatar": "",
+        "name": "User abcd1234",
+        "coin": 0,
+        "isMe": true,
+        "isBan": false
+    }
+}

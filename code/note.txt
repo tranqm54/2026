@@ -1,0 +1,34 @@
+// start
+
+curl 'https://azt-student-api.azota.vn/api/FrontExam/InitData?hashId=obzzxl&hasInfo=0&device=EpMhpWOJ6g30oTeYXZL6&practice=0' \
+  -H 'accept: application/json' \
+  -H 'accept-language: vi,vi-VN;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1NzY3MjQ5IiwiZnVsbF9uYW1lIjoiVHLhuqduIFF1YW4gTWluaCIsInVzZXJfbmFtZSI6IiIsImVtYWlsIjoibWluaGJ1Y3UxMjMzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXZhdGFyIjoiIiwiYmlydGhkYXkiOiIiLCJhbW91bnQiOiIwIiwiZ2VuZGVyIjoiMCIsInphbG9faWQiOiIiLCJyb2xlcyI6IntcIiRpZFwiOlwiMVwiLFwiUEFSRU5UXCI6MSxcIlNUVURFTlRcIjoxLFwiVEVBQ0hFUlwiOjF9IiwiY3JlYXRlZF9ieSI6IiIsInBhc3N3b3JkIjoiIiwiYWxsb3dfc2tpcF92ZXJpZnkiOiIyIiwibGFzdF9hY3Rpdml0eSI6IjIwMjUtMTItMjYgMjI6MTI6MTEiLCJsYW5ndWFnZSI6InZpIiwidmlwIjoiW3tcIlBhY2thZ2VUeXBlXCI6XCJWSVBfRk9SX1NUVURFTlRcIixcIlN0YXJ0VGltZVwiOlwiMjAyNS0xMS0wNFQyMjowODoxMlwiLFwiRW5kVGltZVwiOlwiMjAyNi0xMS0xMVQyMjowODoxMlwifV0iLCJyZWxhdGl2ZV92aXAiOiIwIiwibmJmIjoxNzY2NzYxOTMxLCJleHAiOjE3OTc4NjU5MzEsImlhdCI6MTc2Njc2MTkzMX0.nFt95ORSkh5Xx_5XHoSSr9ifUmRLYhnBw2u4hI8r4pQ' \
+  -H 'azturl: https://azota.vn/vi/test/take-test/96796007/0/obzzxl?backto=%2Fstudent%2Fclassroom%2F0' \
+  -H 'origin: https://azota.vn' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://azota.vn/' \
+  -H 'sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+
+curl 'https://azt-student-api.azota.vn/api/FrontExam/InitData?hashId=obzzxl&password=113115&hasInfo=1&device=EpMhpWOJ6g30oTeYXZL6&practice=0' \
+  -H 'accept: application/json' \
+  -H 'accept-language: vi,vi-VN;q=0.9,fr-FR;q=0.8,fr;q=0.7,en-US;q=0.6,en;q=0.5' \
+  -H 'authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijk1NzY3MjQ5IiwiZnVsbF9uYW1lIjoiVHLhuqduIFF1YW4gTWluaCIsInVzZXJfbmFtZSI6IiIsImVtYWlsIjoibWluaGJ1Y3UxMjMzQGdtYWlsLmNvbSIsInBob25lIjoiIiwiYXZhdGFyIjoiIiwiYmlydGhkYXkiOiIiLCJhbW91bnQiOiIwIiwiZ2VuZGVyIjoiMCIsInphbG9faWQiOiIiLCJyb2xlcyI6IntcIiRpZFwiOlwiMVwiLFwiUEFSRU5UXCI6MSxcIlNUVURFTlRcIjoxLFwiVEVBQ0hFUlwiOjF9IiwiY3JlYXRlZF9ieSI6IiIsInBhc3N3b3JkIjoiIiwiYWxsb3dfc2tpcF92ZXJpZnkiOiIyIiwibGFzdF9hY3Rpdml0eSI6IjIwMjUtMTItMjYgMjI6MTI6MTEiLCJsYW5ndWFnZSI6InZpIiwidmlwIjoiW3tcIlBhY2thZ2VUeXBlXCI6XCJWSVBfRk9SX1NUVURFTlRcIixcIlN0YXJ0VGltZVwiOlwiMjAyNS0xMS0wNFQyMjowODoxMlwiLFwiRW5kVGltZVwiOlwiMjAyNi0xMS0xMVQyMjowODoxMlwifV0iLCJyZWxhdGl2ZV92aXAiOiIwIiwibmJmIjoxNzY2NzYxOTMxLCJleHAiOjE3OTc4NjU5MzEsImlhdCI6MTc2Njc2MTkzMX0.nFt95ORSkh5Xx_5XHoSSr9ifUmRLYhnBw2u4hI8r4pQ' \
+  -H 'azturl: https://azota.vn/vi/test/take-test/96796007/0/obzzxl?backto=%2Fstudent%2Fclassroom%2F0' \
+  -H 'origin: https://azota.vn' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://azota.vn/' \
+  -H 'sec-ch-ua: "Google Chrome";v="143", "Chromium";v="143", "Not A(Brand";v="24"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-site' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36'
+
